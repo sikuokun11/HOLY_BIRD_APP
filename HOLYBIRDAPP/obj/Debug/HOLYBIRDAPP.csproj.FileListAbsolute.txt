@@ -1,0 +1,16 @@
+C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\bin\Debug\HOLYBIRDAPP.exe.config
+C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\bin\Debug\HOLYBIRDAPP.exe
+C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\bin\Debug\HOLYBIRDAPP.pdb
+C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\obj\Debug\HOLYBIRDAPP.csprojAssemblyReference.cache
+C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\obj\Debug\HOLYBIRDAPP.DangNhap.resources
+C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\obj\Debug\HOLYBIRDAPP.Properties.Resources.resources
+C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\obj\Debug\HOLYBIRDAPP.csproj.GenerateResource.cache
+C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\obj\Debug\HOLYBIRDAPP.csproj.CoreCompileInputs.cache
+C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\obj\Debug\HOLYBIRDAPP.exe
+C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\obj\Debug\HOLYBIRDAPP.pdb
+C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\obj\Debug\HOLYBIRDAPP.csproj.CopyComplete
+C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\obj\Debug\HOLYBIRDAPP.DatCho.resources
+C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\bin\Debug\MetroFramework.Design.dll
+C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\bin\Debug\MetroFramework.dll
+C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\bin\Debug\MetroFramework.Fonts.dll

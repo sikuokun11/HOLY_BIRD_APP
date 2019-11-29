@@ -95,6 +95,13 @@ namespace HOLYBIRDAPP
 
             }
         }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DatCho datCho = new DatCho();
+            datCho.ShowDialog();
+        }
     }
     
 }

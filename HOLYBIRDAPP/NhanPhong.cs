@@ -98,5 +98,12 @@ namespace HOLYBIRDAPP
 
             }
         }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TraPhongvaThanhToan traPhongvaThanhToan = new TraPhongvaThanhToan();
+            traPhongvaThanhToan.ShowDialog();
+        }
     }
 }

@@ -38,6 +38,7 @@
             this.txtCMND = new MetroFramework.Controls.MetroTextBox();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.dateBatDau = new MetroFramework.Controls.MetroDateTime();
+            this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -178,7 +179,7 @@
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(223, 294);
+            this.metroButton1.Location = new System.Drawing.Point(33, 303);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(230, 23);
             this.metroButton1.TabIndex = 9;
@@ -194,11 +195,22 @@
             this.dateBatDau.Size = new System.Drawing.Size(230, 29);
             this.dateBatDau.TabIndex = 10;
             // 
+            // metroButton2
+            // 
+            this.metroButton2.Location = new System.Drawing.Point(412, 303);
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.Size = new System.Drawing.Size(173, 23);
+            this.metroButton2.TabIndex = 11;
+            this.metroButton2.Text = "Trả Phòng";
+            this.metroButton2.UseSelectable = true;
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
+            // 
             // NhanPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(656, 450);
+            this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.dateBatDau);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.txtCMND);
@@ -228,5 +240,6 @@
         private MetroFramework.Controls.MetroTextBox txtCMND;
         private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroDateTime dateBatDau;
+        private MetroFramework.Controls.MetroButton metroButton2;
     }
 }

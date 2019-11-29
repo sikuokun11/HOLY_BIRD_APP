@@ -38,6 +38,7 @@
             this.txtTenPhong = new MetroFramework.Controls.MetroTextBox();
             this.txtCMND = new MetroFramework.Controls.MetroTextBox();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -215,11 +216,22 @@
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
+            // metroButton2
+            // 
+            this.metroButton2.Location = new System.Drawing.Point(574, 313);
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.Size = new System.Drawing.Size(119, 23);
+            this.metroButton2.TabIndex = 10;
+            this.metroButton2.Text = "Đăng Ký Lại";
+            this.metroButton2.UseSelectable = true;
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
+            // 
             // HuyDangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.txtCMND);
             this.Controls.Add(this.txtTenPhong);
@@ -249,5 +261,6 @@
         private MetroFramework.Controls.MetroTextBox txtTenPhong;
         private MetroFramework.Controls.MetroTextBox txtCMND;
         private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton metroButton2;
     }
 }

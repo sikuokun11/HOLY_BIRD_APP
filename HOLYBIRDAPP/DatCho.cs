@@ -455,6 +455,21 @@ namespace HOLYBIRDAPP
 
             }
         }
+
+        private void metroButton5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+   
+            HuyDangKy huyDangKy = new HuyDangKy();
+            huyDangKy.ShowDialog();
+        }
+
+        private void metroButton6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            NhanPhong nhanPhong = new NhanPhong();
+            nhanPhong.ShowDialog();
+        }
     }
     
 }

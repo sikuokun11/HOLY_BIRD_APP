@@ -88,6 +88,8 @@
             this.txtMaPhong2 = new MetroFramework.Controls.MetroTextBox();
             this.txtMaPhong3 = new MetroFramework.Controls.MetroTextBox();
             this.txtMaPhong4 = new MetroFramework.Controls.MetroTextBox();
+            this.metroButton5 = new MetroFramework.Controls.MetroButton();
+            this.metroButton6 = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoPhong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -961,11 +963,33 @@
             this.txtMaPhong4.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtMaPhong4.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // metroButton5
+            // 
+            this.metroButton5.Location = new System.Drawing.Point(493, 415);
+            this.metroButton5.Name = "metroButton5";
+            this.metroButton5.Size = new System.Drawing.Size(100, 23);
+            this.metroButton5.TabIndex = 64;
+            this.metroButton5.Text = "Hủy Đăng Kí";
+            this.metroButton5.UseSelectable = true;
+            this.metroButton5.Click += new System.EventHandler(this.metroButton5_Click);
+            // 
+            // metroButton6
+            // 
+            this.metroButton6.Location = new System.Drawing.Point(703, 415);
+            this.metroButton6.Name = "metroButton6";
+            this.metroButton6.Size = new System.Drawing.Size(100, 23);
+            this.metroButton6.TabIndex = 65;
+            this.metroButton6.Text = "Nhận Phòng";
+            this.metroButton6.UseSelectable = true;
+            this.metroButton6.Click += new System.EventHandler(this.metroButton6_Click);
+            // 
             // DatCho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(869, 450);
+            this.Controls.Add(this.metroButton6);
+            this.Controls.Add(this.metroButton5);
             this.Controls.Add(this.txtMaPhong4);
             this.Controls.Add(this.txtMaPhong3);
             this.Controls.Add(this.txtMaPhong2);
@@ -1098,5 +1122,7 @@
         private MetroFramework.Controls.MetroTextBox txtMaPhong2;
         private MetroFramework.Controls.MetroTextBox txtMaPhong3;
         private MetroFramework.Controls.MetroTextBox txtMaPhong4;
+        private MetroFramework.Controls.MetroButton metroButton5;
+        private MetroFramework.Controls.MetroButton metroButton6;
     }
 }

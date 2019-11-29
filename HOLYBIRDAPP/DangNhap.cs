@@ -79,8 +79,8 @@ namespace HOLYBIRDAPP
                     MessageBox.Show("DANG NHAP THANH CONG");
                     this.Hide();
                     // Chuyen man hanh sang Dat Cho
-                    DatCho datcho = new DatCho();
-                    datcho.ShowDialog();
+                    Menu menu = new Menu();
+                    menu.ShowDialog();
                 }
                 else
                     MessageBox.Show("DANG NHAP THAT BAI");

@@ -14,3 +14,6 @@ C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\obj\Debug\HOLYBIRDAPP.DatCho
 C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\bin\Debug\MetroFramework.Design.dll
 C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\bin\Debug\MetroFramework.dll
 C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\obj\Debug\HOLYBIRDAPP.NhanPhong.resources
+C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\obj\Debug\HOLYBIRDAPP.HuyDangKy.resources
+C:\Users\fxqta\source\repos\HOLYBIRDAPP\HOLYBIRDAPP\obj\Debug\HOLYBIRDAPP.TraPhongvaThanhToan.resources

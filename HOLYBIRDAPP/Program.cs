@@ -17,7 +17,7 @@ namespace HOLYBIRDAPP
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new DangNhap());
-            Application.Run(new DatCho());
+            Application.Run(new TraPhongvaThanhToan());
         }
     }
 }

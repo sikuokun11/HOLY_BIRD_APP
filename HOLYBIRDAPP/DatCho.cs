@@ -16,6 +16,7 @@ namespace HOLYBIRDAPP
 {
     public partial class DatCho : Form
     {
+       
         public DatCho()
         {
             InitializeComponent();
@@ -76,6 +77,11 @@ namespace HOLYBIRDAPP
             }
         }
 
+        static void conn_InfoMessage(object sender, SqlInfoMessageEventArgs e)
+        {
+            StringBuilder sb = new StringBuilder("");
+            sb.AppendLine(e.Message);
+        }
         private void buttonDatCho_Click(object sender, EventArgs e)
         {
             string strMaGD = txtMaGD.Text.Trim();
@@ -103,6 +109,7 @@ namespace HOLYBIRDAPP
                     {
 
                         connection.Open();
+                        connection.InfoMessage += conn_InfoMessage;
                         SqlParameter[] arrParam = new SqlParameter[8];
                         arrParam[0] = new SqlParameter("@MaGD", strMaGD);
                         arrParam[1] = new SqlParameter("@MaDoan", strMaDoan);
@@ -119,7 +126,7 @@ namespace HOLYBIRDAPP
                         adapter.Fill(data);
                         if (reader.Read() == true)
                         {
-                            MessageBox.Show("DANG NHAP THANH CONG");
+                            MessageBox.Show("DAT CHO THANH CONG");
                             dataGridView1.DataSource = data.Tables[0];
                             SqlParameter[] arrParam2 = new SqlParameter[5];
                             arrParam2[0] = new SqlParameter("@MaGD", strMaGD);
@@ -131,7 +138,7 @@ namespace HOLYBIRDAPP
                         }
                         else
                         {
-                            MessageBox.Show("DANG NHAP THAT BAI");
+                            MessageBox.Show("DAT CHO THAT BAI");
                             dataGridView1.ClearSelection();
                         }
                            
@@ -197,15 +204,22 @@ namespace HOLYBIRDAPP
                   
                         if (reader.Read() == true)
                         {
-                            SqlParameter[] arrParam2 = new SqlParameter[5];
-                            arrParam2[0] = new SqlParameter("@MaGD", strMaGD);
-                            arrParam2[1] = new SqlParameter("@MaDoan", strMaDoan);
-                            arrParam2[2] = new SqlParameter("@MaPhong", strMaPhong);
-                            arrParam2[3] = new SqlParameter("@CMND", strCMND);
-                            arrParam2[4] = new SqlParameter("@BatDau", strBatDau);
-                            arrParam2[5] = new SqlParameter("@KetThuc", strKetThuc);
+                            SqlParameter[] arrParam2 = new SqlParameter[4];
+                            arrParam2[0] = new SqlParameter("@MaDoan", strMaDoan);
+                            arrParam2[1] = new SqlParameter("@MaPhong", strMaPhong);
+                            arrParam2[2] = new SqlParameter("@CMND", strCMND);
+                            arrParam2[3] = new SqlParameter("@BatDau", strBatDau);
+                            arrParam2[4] = new SqlParameter("@KetThuc", strKetThuc);
                             SqlDataReader reader2 = SqlHelper.ExecuteReader(con, "THEMCHITIETGIAODICH", arrParam2);
-                            MessageBox.Show("BAN DA DANG KY PHONG CHO RIENG MINH THANH CONG");
+                            if (reader2.Read() == true)
+                            {
+                                MessageBox.Show("BAN DA DANG KY PHONG CHO RIENG MINH THANH CONG");
+                            }
+                            else
+                            {
+                                MessageBox.Show("BAN DA DANG KY PHONG CHO RIENG MINH THAT BAI");
+                            }
+                            
                         }
                         else
                         {
@@ -291,7 +305,7 @@ namespace HOLYBIRDAPP
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("ERROR: " + ex.Message);
+           
                 }
                 // cbShowListRoom.DataSource = CHITIETPHONGDAO.Instance.SHOWLISTROOM(strMaGD,strMaDoan,strHang,strHinhThuc,strTang,strSoPhong,strBatDau,strKetThuc);
 
@@ -359,11 +373,10 @@ namespace HOLYBIRDAPP
 
                         connection.Close();
                     }
-
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("ERROR: " + ex.Message);
+                    
                 }
                 // cbShowListRoom.DataSource = CHITIETPHONGDAO.Instance.SHOWLISTROOM(strMaGD,strMaDoan,strHang,strHinhThuc,strTang,strSoPhong,strBatDau,strKetThuc);
 
